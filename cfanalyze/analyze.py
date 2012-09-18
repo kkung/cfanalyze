@@ -4,6 +4,7 @@ import glob
 
 
 class CloudFrontLog(object):
+
     def __init__(self, name):
         super(CloudFrontLog, self).__init__()
         self.name = name
@@ -15,6 +16,7 @@ class CloudFrontLog(object):
 
 
 class Analyzer(object):
+
     def __init__(self, env):
         super(Analyzer, self).__init__()
         self.env = env
@@ -39,6 +41,7 @@ class Analyzer(object):
 
 
 class RefererAnalyzer(Analyzer):
+
     def __init__(self, env):
         super(RefererAnalyzer, self).__init__(env=env)
         self.referer = dict()
@@ -51,6 +54,7 @@ class RefererAnalyzer(Analyzer):
 
 
 class ContentTrafficAnalyzer(Analyzer):
+
     def __init__(self, env):
         super(ContentTrafficAnalyzer, self).__init__(env=env)
         self.entries = dict()
