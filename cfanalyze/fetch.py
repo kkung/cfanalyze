@@ -23,7 +23,8 @@ class Fetcher(object):
         self.logger = logger
 
         if not self.logger:
-            self.logger = logging.getLogger(__name__)
+            self.logger = logging.getLogger(
+                type(self).__module__ + '.' + type(self).__name__)
 
     def fetch(self):
         conn = self.connection
