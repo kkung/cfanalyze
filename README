@@ -8,7 +8,7 @@
         
 ## Output Example
 
-        $ cfa -b log-bucket -t referr --after 2012-09-19 log_prefix
+        $ cfa -b log-bucket -t referer --after 2012-09-19 log_prefix
         50768	http://gae9.com/
         9925	-
         9665	http://gae9.com/gag/170
